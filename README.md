@@ -1,2 +1,2 @@
 # slider
-image-slider using slick slider and fancybox
+https://taniamikhalevska.github.io/slider/

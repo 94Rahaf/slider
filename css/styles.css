@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.slider {
+  width: 1950px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.slider__titles {
+  text-align: center;
+  text-transform: uppercase;
+  width: 1080px;
+  padding: 57px 15px 0;
+  margin: 0 auto 105px;
+}
+.slider__subtitle {
+  color: #303030;
+  font: 600 18px Poppins, sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+}
+.slider__subtitle::after {
+  position: absolute;
+  right: 13%;
+  bottom: 0;
+  content: "+";
+  color: #e98457;
+  font-size: 60px;
+}
+.slider__maintitle {
+  color: #000;
+  font: 400 86px/90px Poppins, sans-serif;
+  position: relative;
+}
+.slider__maintitle::after {
+  position: absolute;
+  bottom: 30%;
+  left: -2%;
+  width: 44px;
+  height: 44px;
+  content: "";
+  background: url(../images/tr.png) top center no-repeat;
+}
+.slider__arrow {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  font-size: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+.slider__arrow--prev {
+  position: absolute;
+  bottom: 50%;
+  left: -100px;
+}
+.slider__arrow--next {
+  position: absolute;
+  right: 37px;
+  bottom: 50%;
+}
+.slider__description {
+  display: none;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+.slider__item {
+  position: relative;
+}
+.slider__item:hover .slider__description {
+  display: block;
+}
+.slider__item:hover .slider__img-wrap::before {
+  content: "";
+  width: 440px;
+  height: 100%;
+  position: absolute;
+  background: rgba(27, 241, 173, 0.9);
+}
+.slider__title {
+  font: 400 28px Poppins, sans-serif;
+  margin-bottom: 10px;
+}
+.slider__author {
+  font: 600 12px Poppins, sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

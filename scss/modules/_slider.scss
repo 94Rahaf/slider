@@ -1,0 +1,79 @@
+.slider {
+    width: 1950px;
+    padding: 0 15px;
+    margin: 0 auto;
+    &__titles {
+        text-align: center;
+        text-transform: uppercase;
+        width: 1080px;
+        padding: 57px 15px 0;
+        margin: 0 auto 105px;
+    }
+   &__subtitle {
+       color: #303030;
+       font: 600 18px Poppins, sans-serif;
+       letter-spacing: 2px;
+       position: relative;
+       &::after {
+           @include pos ($r:13%, $b:0);  
+           content: "+";
+           color: #e98457;
+           font-size: 60px;
+            
+       }
+    }
+    &__maintitle {
+       color: #000;
+       font: 400 86px/90px Poppins, sans-serif;
+        position: relative;
+        &::after {
+            @include pos ($l:-2%, $b:30%); 
+            @include size (44px, 44px);
+            content: "";
+            background: url(../images/tr.png) top center no-repeat ;
+        }
+    }
+    &__arrow {
+        @include size (96px);
+        border-radius: 50%;
+        border: 2px solid #000;
+        font-size: 90px;
+        line-height: 90px;
+        text-align: center;
+        &--prev {
+            @include pos ($l:-100px, $b:50%); 
+        }
+        &--next {
+            @include pos ($r:37px, $b:50%); 
+        }
+    }
+   
+    &__description {
+        display: none;
+        @include pos ($l:0, $t:65%); 
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-left: 30px;
+        }
+    &__item {
+        position: relative;
+        &:hover .slider__description {
+            display: block;
+        }
+        &:hover .slider__img-wrap::before {
+            content: "";
+            @include size (440px,100%);
+            position: absolute;
+            background: rgba(27, 241, 173, 0.9);
+        }
+    }
+    &__title {
+        font: 400 28px Poppins, sans-serif;
+        margin-bottom: 10px;
+    }
+    &__author {
+        font: 600 12px Poppins, sans-serif;
+        
+    }
+}
